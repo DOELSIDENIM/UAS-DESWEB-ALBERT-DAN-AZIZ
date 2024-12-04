@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/hal4.css">
+    <title>Museum Ozeum</title>
+</head>
+<body>
+    <!-- Hero Section with Video -->
+    <section>
+        <div class="hero1">
+            <video autoplay muted loop playsinline class="hero1-video">
+                <source src="media/video home.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <nav class="main-nav">
+                <a href="#" class="logo">ozeum</a>
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link">HOME</a>
+                    <a href="hal 2.html" class="nav-link">SCULPTURE</a>
+                    <a href="hal 3.html" class="nav-link">PREHISTORIC</a>
+                    <a href="hal 4.html" class="nav-link active">CONTACT</a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('pengaduan')">Layanan Pengaduan</div>
+            <div class="tab" onclick="switchTab('kunjungan')">Pendaftaran Kunjungan</div>
+            <div class="tab" onclick="switchTab('alamat')">Alamat</div>
+        </div>
+
+        <div class="form-container">
+            <!-- Pengaduan Form -->
+            <div class="form-section active" id="pengaduan">
+                <form onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label>Your Name (required)</label>
+                        <input type="text" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email (required)</label>
+                        <input type="email" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea required class="form-control" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+
+            <!-- Kunjungan Form -->
+            <div class="form-section" id="kunjungan">
+                <!-- Your existing kunjungan form content -->
+                <form onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label>Tujuan Kunjungan (required)</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tujuan" checked> Kunjungan</label>
+                            <label><input type="radio" name="tujuan"> Magang</label>
+                            <label><input type="radio" name="tujuan"> Penelitian</label>
+                            <label><input type="radio" name="tujuan"> Kunjungan Daring (Online)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Instansi/ Sekolah (required)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jumlah Peserta (required)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" placeholder="Dewasa" required>
+                            <input type="number" placeholder="Anak" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal/ Waktu (required)</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jam Kunjungan 09:00 - 15:00 WIB (required)</label>
+                        <input type="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Penanggung Jawab (required)</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>No. Telp/ HP (required)</label>
+                        <input type="tel" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Alamat Section -->
+            <div class="form-section" id="alamat">
+                <!-- Your existing alamat content -->
+                <h2>Peta Lokasi</h2>
+                <div class="map">
+                    <img src="media/map.jpg" alt="Museum Location Map">
+                </div>
+                <div class="address">
+                    <p>Museum Ozeum terletak di 123 Museum Street, London, UK</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                       
+                        <p>Ozeum: Ozeum adalah museum yang mengenalkan macam macam prasejarah,lukisan dan patung </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="hal 2.html"> SCULPTURE</a></li>
+                            <li><a href="hal 3.html">PREHISTORIC</a></li>
+                            <li><a href="hal 4.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Opening Hours</h6>
+                        <ul>
+                            <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                            <li>Saturday: 10:00 AM - 4:00 PM</li>
+                            <li>Sunday: Closed</li>
+                            <li>Public Holidays: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li>123 Museum Street, London, UK</li>
+                            <li>+44 (0)20 1234 5678</li>
+                            <li>info@ozeum.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © 2023 Ozeum Museum. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/hal4.js"></script>
+</body>
+</html>

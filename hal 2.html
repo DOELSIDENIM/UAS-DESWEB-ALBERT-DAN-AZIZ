@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ozeum Museum Gallery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hal2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-landmark"></i>
+            </div>
+            <span>Ozeum</span>
+        </div>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="hal 2.html">SCULPTURE</a>
+            <a href="hal 3.html">PREHISTORIC</a>
+            <a href="hal 4.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="media/museum-bg2.jpg" alt="Interior of the Louvre Museum" class="hero-image">
+            <div class="hero-text">
+                <div class="hero-text-wrapper">
+                    <div class="hero-text-background"></div>
+                    <h1>Welcome to the<br>Ozeum<br>in United Kingdom</h1>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="pagination">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="navigation-arrows">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Section -->
+        <section class="collection-section">
+            <div class="search-container mb-8">
+                <div class="flex items-center bg-white/10 rounded-lg px-4 py-2">
+                    <i class="fas fa-search text-gold mr-2"></i>
+                    <input class="bg-transparent border-none outline-none text-white placeholder-white/50 w-64" 
+                           placeholder="search for a work of art" type="text"/>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-12 max-w-7xl mx-auto">
+                <div class="collection-text text-gold">
+                    <div>COLL</div>
+                    <div>ECT</div>
+                    <div>ION<span class="text-gold">.</span></div>
+                </div>
+
+                <div class="artwork-frame p-4 bg-black/50">
+                    <div class="artwork-inner">
+                        <div class="artwork-front">
+                            <img alt="Artwork" class="w-full h-full object-cover" src="media/david karya michelangelo.jpg"/>
+                            <div class="scroll-indicator absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gold">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="artwork-back">
+                            <h3 class="text-xl font-bold mb-4">Statue David</h3>
+                            <p class="mb-4">1501 hingga 1504</p>
+                            <p class="mb-4">Marmer,5,17 meter.</p>
+                            <p>Galleria dell'Accademia di Florence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-panel p-8 flex flex-col justify-center">
+                    <h2 class="text-2xl font-bold mb-4">Statue David</h2>
+                    <p class="text-sm leading-relaxed mb-6">
+                        David dalam patung ini digambarkan dalam posisi yang penuh ketegangan, siap untuk bertarung, dengan ekspresi wajah yang menunjukkan fokus dan keberanian. Berbeda dengan representasi tradisional David yang digambarkan setelah pertempuran, Michelangelo memilih untuk menggambarkan David sebelum pertarungan, menonjolkan kekuatan fisik dan mentalnya.
+                    </p>
+                    <button class="self-start text-white hover:text-gold transition-colors flex items-center">
+                        Read more <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="Exhibition">
+         <!-- Background Image -->
+    <img class="background-image" src="/api/placeholder/1920/1080" alt="Dynamic background" id="bgImage">
+
+    <div class="flex h-screen">
+        <!-- Left Section -->
+        <div class="w-1/4 bg-[#b38e5d] flex items-center justify-center relative z-10">
+            <div class="text-center title-animation title-section">
+                <h1 class="text-6xl font-bold leading-none text-white">EXH</h1>
+                <h1 class="text-6xl font-bold leading-none text-white">IBIT</h1>
+                <h1 class="text-6xl font-bold leading-none text-white">ION.</h1>
+            </div>
+        </div>
+        
+        <!-- Right Section -->
+        <div class="w-3/4 flex flex-col relative z-10">
+            <!-- Top Navigation -->
+            <div class="flex justify-between items-center px-8 py-4">
+                <div class="menu-item active" data-artist="Michelangelo ">Michelangelo  </div>
+                <div class="menu-item" data-artist="Auguste">Auguste </div>
+                <div class="menu-item" data-artist="Donatello">Donatello</div>
+                <div class="menu-item" data-artist="Lorenzo">Lorenzo</div>
+                <div class="text-[#b38e5d] logo">
+                    <svg viewBox="0 0 100 100" width="30" height="30">
+                        <polygon points="50,10 90,90 10,90" fill="none" stroke="#b38e5d" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="flex flex-grow">
+                <!-- Left Content -->
+                <div class="w-1/2 flex flex-col justify-center items-center">
+                    <h2 class="text-4xl font-bold mb-4 text-white" id="artistHeading">LEONARDO DA VINCI</h2>
+                    <div class="flip-container">
+                        <img 
+                            id="mainArtwork"
+                            src="media/17-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg"
+                            alt="Current artwork display"
+                            class="border-4 border-[#b38e5d] main-image flip-image rotate-image"
+                            width="300"
+                            height="450"
+                        />
+                    </div>
+                  
+                </div>
+
+                <!-- Right Content -->
+                <div class="w-1/2 flex flex-col justify-center px-8">
+                    <ul class="space-y-4 text-lg art-list">
+                        <li class="artwork-title active" data-artwork="mona-lisa" data-image="media/Pieta Karya Michelangelo.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">PIETA</span>
+                        </li>
+                        <li class="artwork-title" data-artwork="last-supper" data-image="media/david karya michelangelo.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">DAVID </span>
+                        </li>
+                        <li class="artwork-title" data-artwork="vitruvian-man" data-image="media/Discobolus Lancellotti.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">DISCOBOLUS</span>
+                        </li>
+                        <li class="artwork-title" data-artwork="lady-with-ermine" data-image="media/Aphrodite of Milos.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">APHRODITE</span>
+                        </li>
+                        <li class="artwork-title" data-artwork="self-portrait" data-image="media/Moses Karya Michelangelo.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">MOSES</span>
+                        </li>
+                        <li class="artwork-title" data-artwork="head-of-woman" data-image="media/Parthenon Marbles.jpg" data-bg="/api/placeholder/1920/1080">
+                            <span class="text-[#b38e5d] mr-2">—</span>
+                            <span class="text-white">PARTHEON</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section class="ticket">
+        <div class="main-container">
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="space-y-6 fade-in" style="animation-delay: 0.2s">
+                    <div class="image-card floating">
+                        <div class="relative">
+                            <img src="media/Laocoon and His Sons.jpg" 
+                                 alt="Laocoon and His Sons"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Laocoon and His Sons</h3>
+                                <p class="text-sm">Athenodoros</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="image-card floating" style="animation-delay: 0.3s">
+                        <div class="relative">
+                            <img src="media/patung singa jakarta.jpg" 
+                                 alt="Gallery View"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Patung Singa Jakarta</h3>
+                                <p class="text-sm">Friedrich Silaban dan R.M. Soedarsono.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="image-card floating" style="animation-delay: 0.6s">
+                        <div class="relative">
+                            <img src="media/museum gajah.jpg" 
+                                 alt="Grand Hall"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Museum Gajah</h3>
+                                <p class="text-sm">Bataviaasch Genootschap van Kunsten en Wetenschappen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Middle Column -->
+                <div class="space-y-6">
+                    <div class="ticket-section">
+                        <i class="fas fa-ticket-alt ticket-icon"></i>
+                        <h2 class="section-title">Individual Tickets</h2>
+                        <p class="section-description">Experience our permanent collections at your own pace. Choose your preferred time slot and enjoy unlimited access during your visit.</p>
+                        <button class="select-button">
+                            RESERVE NOW
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+            
+                    <div class="ticket-section">
+                        <i class="fas fa-headphones ticket-icon"></i>
+                        <h2 class="section-title">Audio Guide Booking</h2>
+                        <p class="section-description">Enhance your visit with our expert audio commentary. Available in multiple languages for the permanent collections of the Musée du Louvre.</p>
+                        <button class="select-button">
+                            BOOK GUIDE
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+            
+                    <div class="ticket-section">
+                        <i class="fas fa-user-friends ticket-icon"></i>
+                        <h2 class="section-title">Guided Tours</h2>
+                        <p class="section-description">Join our expert guides for an immersive 1h30 tour in English or French. Discover the masterpieces with fascinating historical context.</p>
+                        <button class="select-button">
+                            JOIN TOUR
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Right Column -->
+                <div class="space-y-6 fade-in" style="animation-delay: 0.6s">
+                    <div class="image-card floating" style="animation-delay: 0.9s">
+                        <div class="relative">
+                            <img src="media/Undine Rising from Waters.jpg" 
+                                 alt="Museum Interior"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Undine Rising from Waters</h3>
+                                <p class="text-sm"> Chauncey Bradley Ives</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="image-card floating" style="animation-delay: 1.2s">
+                        <div class="relative">
+                            <img src="media/Winged Victory of Samothrace.jpg" 
+                                 alt="Archway Gallery"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Winged Victory of Samothrace</h3>
+                                <p class="text-sm">Dibuat oleh Seniman Rodos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card floating" style="animation-delay: 1.5s">
+                        <div class="relative">
+                            <img src="media/hermes.jpg" 
+                                 alt="Archway Gallery"/>
+                            <div class="image-overlay">
+                                <h3 class="text-xl font-bold">Hermes</h3>
+                                <p class="text-sm">Praxiteles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        
+                        <p>Ozeum: Ozeum adalah museum yang mengenalkan macam macam prasejarah,lukisan dan patung </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="hal 2.html"> SCULPTURE</a></li>
+                            <li><a href="hal 3.html">PREHISTORIC</a></li>
+                            <li><a href="hal 4.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Opening Hours</h6>
+                        <ul>
+                            <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                            <li>Saturday: 10:00 AM - 4:00 PM</li>
+                            <li>Sunday: Closed</li>
+                            <li>Public Holidays: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li>123 Museum Street, London, UK</li>
+                            <li>+44 (0)20 1234 5678</li>
+                            <li>info@Ozeum.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © 2023 Ozeum . All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/hal2.js"></script>
+</body>
+</html>

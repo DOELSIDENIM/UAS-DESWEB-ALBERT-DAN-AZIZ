@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ozeum of History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hal3.css">
+</head>
+<body>
+    <header class="fixed w-full z-50 bg-opacity-10 backdrop-blur-sm bg-white transition-all duration-300 -mt-7 py-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-2">
+            <div class="flex items-center space-x-3 fade-in">
+                <i class="fas fa-landmark text-[#D4A373]"></i>
+                <span class="text-xl heading-font tracking-wide text-black">MUSEUM</span> <!-- Ubah di sini -->
+            </div>
+            
+            <nav class="fade-in" style="animation-delay: 0.3s">
+                <ul class="flex space-x-10">
+                    <li><a class="nav-link text-black" href="home.html">HOME</a></li> <!-- Ubah di sini -->
+                    <li><a class="nav-link text-black" href="hal 2.html">SCULPTURE</a></li> <!-- Ubah di sini -->
+                    <li><a class="nav-link text-black" href="hal 3.html">PREHISTORIC</a></li> <!-- Ubah di sini -->
+                    <li><a class="nav-link text-black" href="hal 4.html">CONTACT</a></li> <!-- Ubah di sini -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="relative min-h-screen">
+            <img 
+                src="media/museum-bg1.jpg"
+                alt="Museum gallery with historical paintings"
+                class="w-full h-full object-cover absolute inset-0"
+            />
+            
+            <div class="hero-overlay absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <div class="max-w-4xl fade-up" style="animation-delay: 0.8s">
+                    <h1 class="heading-font text-7xl md:text-8xl mb-8 leading-tight">
+                        History adventure
+                    </h1>
+                    <div class="ornamental-divider"></div>
+                    <a href="home.html" class="elegant-button inline-block mt-6 text-lg">
+                       BACK TO HOME
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section py-10 px-8">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="text-[#2B1810] font-semibold text-2xl heading-font">
+                    Info
+                </div>
+                <div class="flex items-center space-x-6 text-[#4A3828]">
+                    <span class="text-lg">Donec ut tellus quis justo suscipit lobortis mollis nec erat.</span>
+                    <a href="#" class="text-[#2B1810] border-b-2 border-[#D4A373] pb-1 transition-all hover:text-[#D4A373]">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="history1">
+            <body class="min-h-screen py-12">
+                <div class="container mx-auto px-6 max-w-7xl">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                        <!-- Left Column -->
+                        <div class="col-span-1 flex flex-col justify-center space-y-8 p-8 bg-white/40 rounded-2xl backdrop-blur-sm">
+                            <div class="space-y-2">
+                                <h1 class="welcome-text text-6xl font-bold mb-6">
+                                    Welcome
+                                </h1>
+                                <div class="decorative-line w-24 mb-8"></div>
+                                <h2 class="history-text text-4xl font-semibold mb-6">
+                                    Ozeum history
+                                </h2>
+                            </div>
+                            
+                            <p class="description text-gray-800">
+                                Manusia purba adalah istilah yang merujuk pada nenek moyang manusia modern (Homo sapiens) yang hidup ribuan hingga jutaan tahun yang lalu. Mereka merupakan bagian dari evolusi manusia, dengan berbagai spesies yang menunjukkan perkembangan fisik, kemampuan berpikir, dan budaya.
+                            </p>
+                            
+                            <a class="read-more group flex items-center space-x-3 w-fit" href="#">
+                                <span class="text-deep-brown font-semibold text-lg group-hover:text-warm-brown transition-colors duration-300">
+                                    Read more
+                                </span>
+                                <i class="fas fa-arrow-right transform group-hover:translate-x-2 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Right Column -->
+                        <div class="col-span-2 relative h-[700px]">
+                            <div class="relative w-full h-full">
+                                <img 
+                                    alt="Interior of a grand museum" 
+                                    class="museum-image-1 hover-elegant custom-shadow rounded-2xl absolute left-0 top-0 w-2/3 h-full object-cover elegant-border"
+                                    src="media/manusia purba 1.jpg"
+                                />
+                                <img 
+                                    alt="Museum hall with exhibits" 
+                                    class="museum-image-2 hover-elegant custom-shadow rounded-2xl absolute right-0 top-1/4 w-2/3 h-2/3 object-cover elegant-border"
+                                    src="media/Manusia purba.jpg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="exhibition">
+            <div class="container">
+                <h1>FOSIL</h1>
+                <div class="exhibition-grid">
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="exhibition-number">01</div>
+                        <div class="date-badge">Jan 2024</div>
+                        <img src="media/t-rex.jpg" alt="Exhibition 1" />
+                        <div class="exhibition-content">
+                            <h2>Fosil T-Rex</h2>
+                            <p>Fosil T-Rex (Tyrannosaurus rex) adalah salah satu fosil dinosaurus paling terkenal di dunia. T-Rex merupakan predator puncak yang hidup sekitar 68–66 juta tahun lalu pada periode Kapur Akhir (Cretaceous). Fosil ini memberikan wawasan penting tentang kehidupan dinosaurus karnivora besar.</p>
+                        </div>
+                    </div>
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="exhibition-number">02</div>
+                        <div class="date-badge">Feb 2024</div>
+                        <img src="media/tarbosaurus.jpg" alt="Exhibition 2" />
+                        <div class="exhibition-content">
+                            <h2>Tarbosaurus</h2>
+                            <p>Tarbosaurus adalah genus dinosaurus karnivora yang hidup sekitar 70–65 juta tahun lalu, pada periode Kapur Akhir (Cretaceous), dan ditemukan di wilayah yang sekarang adalah Mongolia. Tarbosaurus termasuk dalam keluarga Tyrannosauridae, yang juga mencakup Tyrannosaurus rex.</p>
+                        </div>
+                    </div>
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="exhibition-number">03</div>
+                        <div class="date-badge">Mar 2024</div>
+                        <img src="media/triceraptor.jpg" alt="Exhibition 3" />
+                        <div class="exhibition-content">
+                            <h2>Triceraptor</h2>
+                            <p>Triceratops adalah dinosaurus herbivora yang hidup sekitar 68–66 juta tahun lalu pada periode Kapur Akhir. Dikenal dengan tiga tanduk di kepala—dua di atas mata dan satu di hidung—serta topeng tengkorak besar yang melindungi lehernya. Triceratops memiliki panjang sekitar 8 meter dan berat hingga 6 ton. </p>
+                        </div>
+                    </div>
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="exhibition-number">04</div>
+                        <div class="date-badge">Apr 2024</div>
+                        <img src="media/Psittacosaurus22.jpg" alt="Exhibition 4" />
+                        <div class="exhibition-content">
+                            <h2>Psittacosaurus</h2>
+                            <p>Psittacosaurus adalah dinosaurus herbivora yang hidup sekitar 100–120 juta tahun lalu pada periode Cretaceous Awal. Dinosaurus ini memiliki tubuh kecil, panjang sekitar 2 meter, dan dikenal dengan paruh mirip burung di mulutnya, yang digunakan untuk memakan tanaman. </p>
+                        </div>
+                    </div>
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="exhibition-number">05</div>
+                        <div class="date-badge">May 2024</div>
+                        <img src="media/Spinosaurus22.jpg" alt="Exhibition 5" />
+                        <div class="exhibition-content">
+                            <h2>Spinosaurus</h2>
+                            <p>Spinosaurus adalah dinosaurus karnivora yang hidup sekitar 112–93 juta tahun lalu pada periode Cretaceous. Dikenal dengan sail atau sirip besar di punggungnya, yang terbentuk dari vertebra panjang. Spinosaurus memiliki panjang sekitar 12–18 meter dan berat hingga 7–9 ton.</p>
+                        </div>
+                    </div>
+                    <div class="exhibition-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="exhibition-number">06</div>
+                        <div class="date-badge">Jun 2024</div>
+                        <img src="media/Chasmosaurus22.jpg" alt="Exhibition 6" />
+                        <div class="exhibition-content">
+                            <h2>Chasmosaurus</h2>
+                            <p>Chasmosaurus adalah dinosaurus herbivora dari keluarga Ceratopsidae, hidup sekitar 75–70 juta tahun lalu pada periode Kapur Akhir. Dikenal dengan topeng tengkorak besar yang memiliki dua tonjolan besar di sisi mata. Chasmosaurus seukuran triceratops</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <section class="program1">
+            <div class="container">
+                <div class="decoration decoration-1"></div>
+                <div class="decoration decoration-2"></div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="media/Allosaurus_SDNHM_(1).jpg" alt="Gallery view with multiple paintings" />
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Allosaurus</h2>
+                            <p class="description">
+                                Allosaurus adalah dinosaurus karnivora besar yang hidup sekitar 155–150 juta tahun lalu pada periode Jura Akhir. Memiliki tubuh panjang sekitar 8–12 meter dan berat sekitar 2–3 ton. Allosaurus adalah predator puncak di ekosistemnya, berburu dinosaurus herbivora seperti stegosaurus, dan ditemukan di Amerika Utara.
+                            </p>
+                            <a href="#" class="read-more">
+                                Read more
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="media/fosil-stegosaurus-pecahkan-rekor-terjual-rp-720-miliar.png" alt="Person viewing a dramatic painting" />
+                        </div>
+                        <div class="content">
+                            <h2 class="title">Stegosaurus</h2>
+                            <p class="description">
+                                Stegosaurus adalah dinosaurus herbivora yang hidup sekitar 155–150 juta tahun lalu pada periode Jura Akhir. Dikenal dengan pelat besar di punggung dan duri di ekor, Stegosaurus memiliki panjang sekitar 9 meter dan berat sekitar 2–3 ton. Dinosaurus ini ditemukan di Amerika Utara dan Eropa, dan mungkin menggunakan pelat untuk pertahanan atau kontrol suhu tubuh. Stegosaurus termasuk dalam kelompok sauropodomorpha, meskipun bukan sauropoda terbesar.
+                            </p>
+                            <a href="#" class="read-more">
+                                Read more
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Collection Section -->
+<section class="featured-collection">
+    <div class="featured-container">
+        <h1 class="featured-main-title">Featured Collection</h1>
+        
+        <div class="featured-gallery-grid">
+            <!-- Gallery Section -->
+            <div class="featured-gallery-section">
+                <div class="featured-image-container">
+                    <img src="media/Brontosaurus_Yale_Peabody_cropped.jpg" alt="Gallery crowd viewing artwork" class="featured-gallery-image">
+                    <div class="featured-overlay">
+                        <h2>Brontosaurus</h2>
+                        <p>Brontosaurus adalah dinosaurus sauropoda herbivora yang hidup sekitar 154–153 juta tahun lalu pada periode Jura Akhir. Memiliki tubuh panjang sekitar 22–26 meter dan berat hingga 15 ton. Dikenal dengan leher panjang, ekor besar, dan memakan tanaman rendah. Fosilnya ditemukan di Amerika Utara.</p>
+                        <button class="featured-read-more">Brontosaurus</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exhibition Section -->
+            <div class="featured-exhibition-section">
+                <div class="featured-exhibition-content featured-fade-in">
+                    <img src="media/Velociraptor_fruita-scaled.jpg" alt="Person viewing exhibition" class="featured-exhibition-image">
+                    <h2>Velociraptor</h2>
+                    <p>Velociraptor adalah dinosaurus karnivora kecil yang hidup sekitar 75–71 juta tahun lalu pada periode Cretaceous. Memiliki panjang sekitar 2 meter dan berat sekitar 15 kg, Velociraptor dikenal dengan cakar besar di kaki kedua yang digunakan untuk berburu. Dinosaurus ini hidup dalam kelompok dan ditemukan di Mongolia.</p>
+                    <button class="featured-read-more">Velociraptor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        
+                        <p>Ozeum: Ozeum adalah museum yang mengenalkan macam macam prasejarah,lukisan dan patung </p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="hal 2.html"> SCULPTURE</a></li>
+                            <li><a href="hal 3.html">PREHISTORIC</a></li>
+                            <li><a href="hal 4.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Opening Hours</h6>
+                        <ul>
+                            <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+                            <li>Saturday: 10:00 AM - 4:00 PM</li>
+                            <li>Sunday: Closed</li>
+                            <li>Public Holidays: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h6>Contact Us</h6>
+                        <ul>
+                            <li>123 Museum Street, London, UK</li>
+                            <li>+44 (0)20 1234 5678</li>
+                            <li>info@Ozeum.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        © 2023 Ozeum Museum. All Rights Reserved.
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <script src="js/hal3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
